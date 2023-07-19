@@ -1,5 +1,5 @@
 aws-encryption-cli --encrypt \
-                     --input secret1.txt \
+                     --input secret.txt \
                      --wrapping-keys key=$keyArn \
                      --metadata-output ~/metadata \
                      --encryption-context purpose=test \
