@@ -1,7 +1,9 @@
-aws-encryption-cli --encrypt \
-                     --input secret.txt \
+aws-encryption-cli --decrypt \
+                     --input secret1.txt.encrypted \
                      --wrapping-keys key=$keyArn \
-                     --metadata-output ~/metadata \
-                     --encryption-context purpose=test \
                      --commitment-policy require-encrypt-require-decrypt \
-                     --output ~/output/.
+                     --encryption-context purpose=test \
+                     --metadata-output ~/metadata \
+                     --max-encrypted-data-keys 1 \
+                     --buffer \
+                     --output .
