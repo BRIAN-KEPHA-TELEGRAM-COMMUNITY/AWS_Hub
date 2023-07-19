@@ -1,5 +1,5 @@
 aws-encryption-cli --decrypt \
-                     --input secret1.txt.encrypted \
+                     --input secret.txt.encrypted \
                      --wrapping-keys key=$keyArn \
                      --commitment-policy require-encrypt-require-decrypt \
                      --encryption-context purpose=test \
