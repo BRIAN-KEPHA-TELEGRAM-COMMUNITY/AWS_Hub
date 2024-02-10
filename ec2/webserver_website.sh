@@ -16,8 +16,8 @@ sudo yum install git -y
 cd /home/ec2-user
 
 # Clone the GitHub repository
-git clone https://github.com/abirhasn07/T-House.git
+git clone https://github.com/AngelofVerdant/ec2TestRepo.git
 
 
 # Move repository files to /var/www/html directory
-sudo mv /home/ec2-user/T-House/*  /var/www/html/
+sudo mv /home/ec2-user/ec2TestRepo/*  /var/www/html/
